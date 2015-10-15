@@ -1,4 +1,4 @@
-package lille1.Piscine;
+package lille1.piscine;
 
 
 /**
@@ -6,7 +6,6 @@ package lille1.Piscine;
  */
 public class MainTest {
 
-    @Test
     public void testMain() throws Exception {
 
     }

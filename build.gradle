@@ -15,7 +15,7 @@ repositories {
 
 jar {
     manifest {
-        attributes("Main-Class": "lille1.Piscine.Main");
+        attributes("Main-Class": "lille1.piscine.Main");
     }
 }
 
