@@ -1,36 +1,14 @@
 package lille1.piscine.model;
 
 
-/**
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
- */
-
 public abstract class Action
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public Action(){
-		super();
-	}
+    public abstract boolean isReady();
 
-	/**
-	 * <br>
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public String algo() {
-		return step1();
-	}
+    public abstract boolean isInProgress();
 
-    protected abstract String step1() ;
-	
+    public abstract boolean isFinished();
+
+	public abstract void doStep();
 }
 
