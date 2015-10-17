@@ -7,15 +7,17 @@
  * user guide available at https://docs.gradle.org/2.7/userguide/tutorial_java_projects.html
  */
 
-apply plugin: 'java'
+apply plugin: 'application'
 
 repositories {
     jcenter()
 }
 
+mainClassName = "lille1.piscine.Main"
+
 jar {
     manifest {
-        attributes("Main-Class": "lille1.piscine.Main");
+        attributes("Main-Class": mainClassName);
     }
 }
 
