@@ -1,4 +1,4 @@
-package foreseebleAction;
+package action.foreseebleAction;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

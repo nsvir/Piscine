@@ -1,4 +1,4 @@
-package scheduler;
+package action.scheduler;
 
 import org.junit.Test;
 

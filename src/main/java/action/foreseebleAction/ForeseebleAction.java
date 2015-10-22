@@ -1,4 +1,4 @@
-package foreseebleAction;
+package action.foreseebleAction;
 import action.Action;
 
 

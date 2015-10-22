@@ -1,4 +1,4 @@
-package scheduler;
+package action.scheduler;
 
 import static org.junit.Assert.assertTrue;
 import exception.ActionFinishedException;
