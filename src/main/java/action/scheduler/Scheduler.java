@@ -1,4 +1,4 @@
-package scheduler;
+package action.scheduler;
 import java.util.ArrayList;
 
 import action.Action;

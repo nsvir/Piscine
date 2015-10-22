@@ -4,10 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import scheduler.FairScheduler;
-import scheduler.SequentialScheduler;
+import action.scheduler.FairScheduler;
+import action.scheduler.SequentialScheduler;
 import exception.ActionFinishedException;
-import foreseebleAction.ForeseebleAction;
+import action.foreseebleAction.ForeseebleAction;
 
 public abstract class ActionTest {
 	

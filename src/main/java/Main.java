@@ -1,6 +1,6 @@
 import exception.ActionFinishedException;
 import resource.ResourcePool;
-import scheduler.FairScheduler;
+import action.scheduler.FairScheduler;
 
 public class Main {
 
