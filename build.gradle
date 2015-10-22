@@ -13,7 +13,7 @@ repositories {
     jcenter()
 }
 
-mainClassName = "lille1.piscine.Main"
+mainClassName = "Main"
 
 jar {
     manifest {
