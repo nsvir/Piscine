@@ -5,5 +5,5 @@ package resource;
  * n.svirchevsky@gmail.com
  */
 public class TakeResourceAction implements ResourceAction {
-    
+
 }
