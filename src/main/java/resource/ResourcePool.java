@@ -6,6 +6,6 @@ package resource;
  */
 public interface ResourcePool {
 
-    void provideResource();
+    Resource provideResource();
     void freeResource(Resource r);
 }
