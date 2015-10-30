@@ -1,19 +1,26 @@
 import exception.ActionFinishedException;
-import resource.ResourcePool;
+import resource.resourcePool.BasketPool;
+import resource.resourcePool.CubiclePool;
+import resource.resourcePool.ResourcePool;
 import action.scheduler.FairScheduler;
 
 public class Swim {
 
-    static ResourcePool basket;
-    static ResourcePool cubicles;
+    static BasketPool basket;
+    static CubiclePool cubicles;
 
     public static Swimmer createSwimmer(String name, int dressTime, int swimTime, int undressTime) {
         return new Swimmer(name, basket, cubicles, dressTime, swimTime, undressTime);
     }
 
 	public static void main(String[] args) {
-        basket = null;
-        cubicles = null;
+        basket = new BasketPool(10);
+        cubicles = new CubiclePool(5);
+
+        for (int i = 0; i < 10; i++) {
+            basket.provideResource();
+        }
+
 		FairScheduler s = new FairScheduler();
 
 		s.addAction(createSwimmer("Valerie", 10, 20, 3));

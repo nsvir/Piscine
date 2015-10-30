@@ -1,7 +1,7 @@
 import action.scheduler.SequentialScheduler;
 import foreseebleAction.SwimAction;
 import foreseebleAction.UndressAction;
-import resource.ResourcePool;
+import resource.resourcePool.ResourcePool;
 
 /**
  * Created by nanosvir on 30 Oct 15.

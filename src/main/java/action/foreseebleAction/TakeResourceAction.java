@@ -1,7 +1,7 @@
 package action.foreseebleAction;
 
 import resource.Resource;
-import resource.ResourcePool;
+import resource.resourcePool.ResourcePool;
 import resource.ResourcefulUser;
 
 /**
