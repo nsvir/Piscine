@@ -11,7 +11,6 @@ public class Swimmer extends SequentialScheduler {
 
     protected String name;
 
-
     public  Swimmer(String name, ResourcePool baskets, ResourcePool cubicles, int undressTime, int swimTime, int dressTime) {
         this.name = name;
         assignTasks(baskets, cubicles, undressTime, swimTime, dressTime);
