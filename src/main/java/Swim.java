@@ -2,7 +2,7 @@ import exception.ActionFinishedException;
 import resource.ResourcePool;
 import action.scheduler.FairScheduler;
 
-public class Main {
+public class Swim {
 
     static ResourcePool basket;
     static ResourcePool cubicles;
