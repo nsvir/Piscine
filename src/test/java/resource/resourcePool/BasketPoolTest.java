@@ -2,6 +2,7 @@ package resource.resourcePool;
 
 import org.junit.Before;
 import org.junit.Test;
+import resource.resourcePool.exception.NoResourceAvailable;
 
 import java.util.EmptyStackException;
 
@@ -24,15 +25,15 @@ public class BasketPoolTest {
     }
 
     @Test
-    public void testProvideResource() {
+    public void testProvideResource() throws NoResourceAvailable {
         basketPool = new BasketPool(expected);
         for (int i = 0; i < expected; i++) {
             assertNotNull(basketPool.provideResource());
         }
     }
 
-    @Test (expected = EmptyStackException.class)
-    public void testProvideResourceEmpty() {
+    @Test (expected = NoResourceAvailable.class)
+    public void testProvideResourceEmpty() throws NoResourceAvailable {
         emptyBasketPool.provideResource();
     }
 
