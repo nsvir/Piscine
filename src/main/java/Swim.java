@@ -17,11 +17,7 @@ public class Swim {
         basket = new BasketPool(10);
         cubicles = new CubiclePool(5);
 
-        for (int i = 0; i < 10; i++) {
-            basket.provideResource();
-        }
-
-		FairScheduler s = new FairScheduler();
+        FairScheduler s = new FairScheduler();
 
 		s.addAction(createSwimmer("Valerie", 10, 20, 3));
 		s.addAction(createSwimmer("Jack", 5, 3, 10));
